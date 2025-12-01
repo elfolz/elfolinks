@@ -1,0 +1,39 @@
+* {
+	font-family: sans-serif;
+	box-sizing: border-box;
+	outline: none !important;
+	user-select: none;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-tap-highlight-color: transparent;
+}
+:root {
+	--color-primary: #00ffb9;
+	--color-accent: #3264ff;
+}
+img, svg {
+	-webkit-user-drag: none;
+	user-drag: none;
+}
+body {
+	margin: 0;
+	overflow: hidden;
+}
+section {
+	background: linear-gradient(var(--color-accent), var(--color-primary));
+	background-size: cover;
+	min-width: calc(max(100dvw, 100dvh) * 2);
+	min-height: calc(max(100dvw, 100dvh) * 2);
+	animation: rotate 5s linear infinite;
+	position: fixed;
+	top: -50%;
+	left: -50%;
+}
+@keyframes rotate {
+	from {
+		rotate: 0deg;
+	}
+	to {
+		rotate: 360deg;
+	}
+}
