@@ -28,6 +28,54 @@ section {
 	position: fixed;
 	top: -50%;
 	left: -50%;
+	z-index: -1;
+}
+main {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 40px;
+}
+main figure:first-of-type {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+main figure:first-of-type img {
+	width: 96px;
+	border-radius: 50%;
+}
+main figure:first-of-type figcaption {
+	font-family: sans-serif;
+	font-weight: bold;
+}
+main figure:first-of-type figcaption header {
+	font-size: 2rem;
+	color: var(--color-primary);
+	text-shadow: -3px -3px 3px var(--color-accent), 3px -3px 3px var(--color-accent), 3px 3px 3px var(--color-accent), -3px 3px 3px var(--color-accent), 0 -3px 3px var(--color-accent), 0 3px 3px var(--color-accent), -3px 0 3px var(--color-accent), 3px 0 3px var(--color-accent), 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+main figure:first-of-type figcaption footer {
+	font-size: 1.1rem;
+	color: #fff;
+	text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+main figure {
+	width: fit-content;
+	margin: 0;
+}
+main a img {
+	width: 63px;
+	cursor: pointer;
+}
+img {
+	aspect-ratio: 1/1;
+	filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.5));
 }
 @keyframes rotate {
 	from {
