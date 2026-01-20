@@ -36,7 +36,7 @@ main {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	gap: 40px;
 }
 main figure:first-of-type {
@@ -45,7 +45,7 @@ main figure:first-of-type {
 	justify-content: space-evenly;
 	width: 100%;
 	grid-column-start: 1;
-	grid-column-end: 4;
+	grid-column-end: 5;
 }
 main figure:first-of-type img {
 	width: 96px;
